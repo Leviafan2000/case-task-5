@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Университет «Синергия»</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&family=PT+Sans:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --font-primary: 'Raleway', sans-serif;
+  --font-alt-1: 'Montserrat', sans-serif;
+  --font-alt-2: 'Open Sans', sans-serif;
+  --font-alt-3: 'Roboto', sans-serif;
+  --font-alt-4: 'PT Sans', sans-serif;
+  --font-alt-5: 'Inter', sans-serif;
+  --color-primary: #E31E24;
+  --color-secondary: #1A1A2E;
+  --color-bg: #F8F9FA;
+  --color-text: #2D2D2D;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.header {
+  background: linear-gradient(135deg, var(--color-secondary) 0%, #16213E 100%);
+  color: #FFFFFF;
+  padding: 48px 40px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.header .subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+.content { padding: 40px; }
+
+.info-block {
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.info-block:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.info-block h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.info-block p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.info-block ul { list-style: none; padding: 0; }
+
+.info-block ul li {
+  padding: 4px 0 4px 20px;
+  position: relative;
+}
+
+.info-block ul li::before {
+  content: "•";
+  color: var(--color-primary);
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+}
+
+.fonts-section {
+  margin-top: 40px;
+  padding: 32px 40px;
+  background: #F0F2F5;
+  border-top: 3px solid var(--color-primary);
+}
+
+.fonts-section h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.fonts-section .fonts-note {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.font-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.font-card .font-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.font-card .font-name {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.font-card .font-preview {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  line-height: 1.4;
+}
+
+.font-preview.raleway    { font-family: var(--font-primary); }
+.font-preview.montserrat { font-family: var(--font-alt-1); }
+.font-preview.opensans   { font-family: var(--font-alt-2); }
+.font-preview.roboto     { font-family: var(--font-alt-3); }
+.font-preview.ptsans     { font-family: var(--font-alt-4); }
+.font-preview.inter      { font-family: var(--font-alt-5); }
+
+.footer {
+  text-align: center;
+  padding: 24px 40px;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+@media (max-width: 600px) {
+  .header { padding: 32px 24px; }
+  .header h1 { font-size: 1.6rem; }
+  .content { padding: 24px; }
+  .fonts-section { padding: 24px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1>Университет «Синергия»</h1>
+    <p class="subtitle">Негосударственное образовательное частное учреждение высшего образования</p>
+  </header>
+
+  <main class="content">
+    <div class="info-block">
+      <h2>Полное наименование</h2>
+      <p>Негосударственное образовательное частное учреждение высшего образования «Московский университет «Синергия»</p>
+    </div>
+
+    <div class="info-block">
+      <h2>Сокращённое наименование</h2>
+      <p>Университет «Синергия»</p>
+    </div>
+
+    <div class="info-block">
+      <h2>Организационно-правовая форма</h2>
+      <p>Негосударственное образовательное частное учреждение высшего образования (НОЧУ ВО)</p>
+    </div>
+
+    <div class="info-block">
+      <h2>Основные виды деятельности</h2>
+      <ul>
+        <li>Высшее образование (бакалавриат, специалитет, магистратура, аспирантура)</li>
+        <li>Среднее профессиональное образование (колледж)</li>
+        <li>Дополнительное профессиональное образование</li>
+        <li>Дистанционное обучение</li>
+      </ul>
+    </div>
+
+    <div class="info-block">
+      <h2>Территориальное размещение</h2>
+      <p>Головной вуз — Москва. Филиалы в России и за рубежом (Дубай, Ташкент, Тегеран).</p>
+    </div>
+
+    <div class="info-block">
+      <h2>Официальный сайт</h2>
+      <p>https://synergy.ru/</p>
+    </div>
+  </main>
+
+  <section class="fonts-section">
+    <h2>Варианты шрифтов</h2>
+    <p class="fonts-note">Основной шрифт — Raleway (фирменный). Представлены 5 альтернативных вариантов.</p>
+
+    <div class="font-card">
+      <div class="font-label">Основной (фирменный)</div>
+      <div class="font-name">Raleway</div>
+      <div class="font-preview raleway">Университет «Синергия» — образование будущего</div>
+    </div>
+
+    <div class="font-card">
+      <div class="font-label">Вариант 1</div>
+      <div class="font-name">Montserrat</div>
+      <div class="font-preview montserrat">Университет «Синергия» — образование будущего</div>
+    </div>
+
+    <div class="font-card">
+      <div class="font-label">Вариант 2</div>
+      <div class="font-name">Open Sans</div>
+      <div class="font-preview opensans">Университет «Синергия» — образование будущего</div>
+    </div>
+
+    <div class="font-card">
+      <div class="font-label">Вариант 3</div>
+      <div class="font-name">Roboto</div>
+      <div class="font-preview roboto">Университет «Синергия» — образование будущего</div>
+    </div>
+
+    <div class="font-card">
+      <div class="font-label">Вариант 4</div>
+      <div class="font-name">PT Sans</div>
+      <div class="font-preview ptsans">Университет «Синергия» — образование будущего</div>
+    </div>
+
+    <div class="font-card">
+      <div class="font-label">Вариант 5</div>
+      <div class="font-name">Inter</div>
+      <div class="font-preview inter">Университет «Синергия» — образование будущего</div>
+    </div>
+  </section>
+
+  
+  </footer>
+</div>
+</body>
+</html>
